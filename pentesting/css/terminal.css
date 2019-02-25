@@ -1,0 +1,19 @@
+#terminal {
+    font-size: 13px;
+  height: 100vh;
+    color: #0f8;
+  white-space: pre-wrap;
+  line-height: 1.4;
+}
+
+#caret {
+  display: inline-block;
+  height: 1.35em;
+  width: 0.7em;
+  vertical-align: middle;
+  background-color: #fff;
+}
+
+.transparent {
+  opacity: 0;
+}

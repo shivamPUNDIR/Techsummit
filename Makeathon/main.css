@@ -1,0 +1,156 @@
+.span1 {
+    font-family: 'Major Mono Display', monospace;
+}
+
+.pre-fest-head {
+    font-family: 'Major Mono Display', monospace;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 45px;
+    padding-top: 10px;
+    padding: auto;
+   
+}
+.schedule-head{
+  font-family: 'Major Mono Display', monospace;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.schedule-card{
+    background: none;
+    border: none;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.schedule{
+   width: 400px;
+    height: 40px;
+    color: black;
+    display: block;
+    margin: auto;
+    padding-top: 1px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    opacity: 0.75;
+    
+}
+.prizes{
+    background-color: white; 
+    margin-bottom: 0px;
+}
+.tracks{
+    text-align: center;
+   padding-bottom: 50px;
+    font-size: 50px;
+}
+.tracks-img{
+    width: 40%;
+    display: block;
+    margin: auto;
+    border-radius: 2%;
+    opacity: 100%;
+    margin-top: 20px;
+}
+.track-des{
+    text-align: center;
+    margin-top: 30px;
+}
+.track-card{
+    display: block;
+    margin: auto;
+    max-width: 250px;
+   height: 250px;
+    opacity: 0.5;
+    margin-bottom: 40px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    
+}
+.img-and, .img-azure, .img-django{
+    max-width: 50%;
+    display: block;
+    margin: auto;
+}
+
+
+.link1{
+    
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    
+    
+}
+.main-card{
+    max-width: 1080px;
+    background: none;
+    display: block;
+    margin: auto;
+    border: none;
+    padding-bottom: 50px;
+    padding-top: -20px;
+    font-family: 'Thasadith', sans-serif;
+   
+}
+.list-head{
+ font-family: 'Thasadith', sans-serif;   text-align: center;
+}
+.list-items{
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    padding-left: 20px;
+}
+.btn1{
+    margin-top: 10px;
+}
+.list-card{
+   
+    color: white;
+    max-width: 420px;
+    border: none;
+    display: block;
+    margin: auto;
+    max-height: 700px;
+    height: 500px;
+    padding: auto;
+    margin-bottom: 50px;
+    background: none;
+    text-align: center;
+}
+.android{
+   padding-bottom: 50px;
+}
+.and-head{
+    text-align: left;
+    padding-top: 50px;
+    font-size: 30px;
+    font-family: 'Thasadith', sans-serif;
+    color: white;
+    font-weight: bold;
+   
+    
+}
+.and-card{
+    background: none;
+    border: none;
+    margin-left: 0px;
+    padding: 10px;
+}
+.and-des{
+    font-family: 'Thasadith', sans-serif;
+    padding-top: -100px;
+}
+.cube1{
+    width: 10%;
+}
+.main-event{
+    margin-bottom: 0px;
+}
+.mainevent-head{
+    text-align: center;
+    padding-bottom: 50px;
+}

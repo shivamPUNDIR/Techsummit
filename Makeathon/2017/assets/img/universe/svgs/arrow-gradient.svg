@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#F37055" offset="0%"></stop>
+            <stop stop-color="#EF4E7B" offset="51.7996652%"></stop>
+            <stop stop-color="#A166AB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="200_Program---Day-1" transform="translate(-709.000000, -1073.000000)" fill-rule="nonzero" fill="url(#linearGradient-1)">
+            <g id="Tab-2-Content" transform="translate(128.000000, 455.000000)">
+                <g id="Group-4" transform="translate(97.000000, 200.000000)">
+                    <path d="M497.6,442 C497.36,442 497.2,441.92 497.04,441.76 C496.72,441.44 496.72,440.96 497.04,440.64 L502.88,434.8 L497.04,428.96 C496.72,428.64 496.72,428.16 497.04,427.84 C497.36,427.52 497.84,427.52 498.16,427.84 L504.56,434.24 C504.88,434.56 504.88,435.04 504.56,435.36 L498.16,441.76 C498,441.92 497.76,442 497.6,442 Z M500,450 C491.2,450 484,442.8 484,434 C484,425.2 491.2,418 500,418 C503.6,418 506.96,419.2 509.84,421.36 C510.16,421.6 510.24,422.16 510,422.48 C509.76,422.8 509.2,422.88 508.88,422.64 C506.32,420.64 503.2,419.6 500,419.6 C492.08,419.6 485.6,426.08 485.6,434 C485.6,441.92 492.08,448.4 500,448.4 C507.92,448.4 514.4,441.92 514.4,434 C514.4,431.44 513.68,428.88 512.4,426.64 C512.16,426.24 512.32,425.76 512.64,425.52 C513.04,425.28 513.52,425.44 513.76,425.76 C515.2,428.32 516,431.12 516,434 C516,442.8 508.8,450 500,450 Z" id="arrow"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
