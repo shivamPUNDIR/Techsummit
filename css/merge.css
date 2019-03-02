@@ -3682,8 +3682,8 @@ img {
 }
 
 * {
-    --animation-delay: 5s;
-    --duration: 1000ms;
+    --animation-delay: 3s;
+    --duration: 100ms;
     --iterations: 1
 }
 
@@ -4258,6 +4258,7 @@ img {
     white-space: nowrap;
     /* Keeps the content on a single line */
     margin: 0 auto;
+    margin-right: 80px;
     /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em;
     /* Adjust as needed */

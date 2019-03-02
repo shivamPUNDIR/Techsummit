@@ -82,7 +82,8 @@
                     <div class="landing-data-right" data-sal="fade" data-sal-delay="10" data-sal-easing="ease-in">
                         <div class="app" data-typer-targets="TECH<br/>SUMMIT">
                             <p>TECH</p><br>
-                            <p>SUMMIT</p>
+                            <p>SUMMIT</p><br>
+                            <p>2K19</p>
                         </div>
                         <div class="chevron"><img src="images/down-chevron.svg" alt="scroll-down"></div>
                     </div>
@@ -163,171 +164,12 @@
             <div class="sponsors-data" data-sal="fade" data-sal-delay="200" data-sal-easing="ease-in"><img src="images/Paytm.png" alt="PayTm"> <img src="images/Coding_blocks.png" alt="Coding Blocks"> <img src="images/Balsamiq_logo.png" alt="Balsamiq"> <img src="images/digitalocean.png" alt="DigitalOcean"> <img src="images/github.png" alt="GitHub"> <img src="images/Hasura_logo.png" alt="Hasura"> <img src="images/hacks.png" alt="HackSociety"> <img src="images/inkmonk_logo.png" alt="inkmonk"> <img src="images/LCO_logo.png" alt="LCO"> <img src="images/sticker-mule.svg" alt="Stickermule"> <img src="images/fab_hotels.png" alt="fabhotels"> <img src="images/Fusion_logo.png" alt="FusionSoft"></div>
         </section>
         <section id="Contact">
-            <h3 data-sal="slide-down" data-sal-delay="20" data-sal-easing="ease-in">Reach Us</h3><iframe src="https://snazzymaps.com/embed/130573" style="border:none;" class="MAP" data-sal="fade" data-sal-delay="200" data-sal-easing="ease-in"></iframe>
+            <h3 data-sal="slide-down" data-sal-delay="20" data-sal-easing="ease-in">Reach Us</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6885.862476915668!2d76.35917501557674!3d30.352904049904126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39102f534a87b5c5%3A0xda1d3ed337e382b3!2sThapar+University%2C+Prem+Nagar%2C+Patiala%2C+Punjab+147004!5e0!3m2!1sen!2sin!4v1551524319562" width="542" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
             <div class="contact-data" data-sal="fade" data-sal-delay="200" data-sal-easing="ease-in"><a href="mailto:msc@thapar.edu" data-sal="fade" data-sal-delay="200" data-sal-easing="ease-in"><img src="images/envelope.svg" alt="mail"></a><a href="https://www.msctiet.co.in/" target="_blank" data-sal="fade" data-sal-delay="250" data-sal-easing="ease-in"><img src="images/globe.svg" alt="website"></a><a href="tel:9997630003" class="tooltip" data-sal="fade" data-sal-delay="300" data-sal-easing="ease-in" title="+91 99976 30003"><img src="images/phone.svg" alt="call"> <span class="tooltiptext">+91 99976 30003</span> </a><a href="https://www.facebook.com/msctiet/" target="_blank" data-sal="fade" data-sal-delay="300" data-sal-easing="ease-in"><img src="images/facebook.svg" alt="facebook"></a><a href="https://twitter.com/chapter_student" data-sal="fade" data-sal-delay="350" data-sal-easing="ease-in"><img src="images/twitter.svg" alt="twitter"></a></div>
         </section>
     </div>
 </body>
-<script src="scripts/curtains.min.js"></script>
-<script id="plane-vs" type="x-shader/x-vertex">#ifdef GL_ES
-     		precision mediump float;
-     		#endif
-
-     		// those are the mandatory attributes that the lib sets
-     		attribute vec3 aVertexPosition;
-     		attribute vec2 aTextureCoord;
-
-     		// those are mandatory uniforms that the lib sets and that contain our model view and projection matrix
-     		uniform mat4 uMVMatrix;
-     		uniform mat4 uPMatrix;
-
-     		// our time uniform
-     		uniform float uTime;
-
-     		// our mouse position uniform
-     		uniform vec2 uMousePosition;
-
-     		// our mouse strength
-     		uniform float uMouseStrength;
-
-     		// if you want to pass your vertex and texture coords to the fragment shader
-     		varying vec3 vVertexPosition;
-     		varying vec2 vTextureCoord;
-
-     		void main() {
-     			vec3 vertexPosition = aVertexPosition;
-
-     			// get the distance between our vertex and the mouse position
-     			float distanceFromMouse = distance(uMousePosition, vec2(vertexPosition.x, vertexPosition.y));
-
-     			// this will define how close the ripples will be from each other. The bigger the number, the more ripples you'll get
-     			float rippleFactor = 4.5;
-     			// calculate our ripple effect
-     			float rippleEffect = cos(rippleFactor * (distanceFromMouse - (uTime / 140.0)));
-
-     			// calculate our distortion effect
-     			float distortionEffect = rippleEffect * uMouseStrength;
-
-     			// apply it to our vertex position
-     			vertexPosition +=  distortionEffect / 70.0;
-
-     			gl_Position = uPMatrix * uMVMatrix * vec4(vertexPosition, 1.0);
-
-     			// varyings
-     			vTextureCoord = aTextureCoord;
-     			vVertexPosition = vertexPosition;
-    }</script>
-<script id="plane-fs" type="x-shader/x-fragment">#ifdef GL_ES
-    		precision mediump float;
-    		#endif
-
-    		// get our varyings
-    		varying vec3 vVertexPosition;
-    		varying vec2 vTextureCoord;
-
-    		// our texture sampler (this is the lib default name, but it could be changed)
-    		uniform sampler2D uSampler0;
-
-    		void main() {
-    			// get our texture coords
-    			vec2 textureCoords = vTextureCoord;
-
-    			// apply our texture
-    			vec4 finalColor = texture2D(uSampler0, textureCoords);
-
-    			// fake shadows based on vertex position along Z axis -0.1
-    			finalColor.rgb -= clamp(-vVertexPosition.z, 0.0, 0.9);
-    			// fake lights based on vertex position along Z axis 0.0001
-    			finalColor.rgb += clamp(vVertexPosition.z, 0.0, 0.9);
-
-    			// handling premultiplied alpha (useful if we were using a png with transparency)
-    			finalColor = vec4(finalColor.rgb * finalColor.a, finalColor.a);
-
-    			gl_FragColor = finalColor;
-    		}</script>
-<script>
-    window.onload = function() {
-        if (screen.width > 450) {
-            var mousePosition = {
-                x: 0,
-                y: 0
-            };
-            var webGLCurtain = new Curtains("canvas");
-
-            // get our plane element
-            var planeElement = document.getElementsByClassName("plane")[0];
-
-            var params = {
-                vertexShaderID: "plane-vs",
-                fragmentShaderID: "plane-fs",
-                widthSegments: 40,
-                heightSegments: 40,
-                uniforms: {
-                    time: {
-                        name: "uTime",
-                        type: "1f",
-                        value: 1
-                    },
-                    mousePosition: {
-                        name: "uMousePosition",
-                        type: "2f",
-                        value: [mousePosition.x, mousePosition.y]
-                    },
-                    mouseStrength: {
-                        name: "uMouseStrength",
-                        type: "1f",
-                        value: 0
-                    }
-                }
-            };
-
-            var plane = webGLCurtain.addPlane(planeElement, params);
-
-            plane
-                .onReady(function() {
-                    plane.setPerspective(35);
-
-                    document.body.addEventListener("mousemove", function(e) {
-                        handleMovement(e, plane);
-                    });
-
-                    document.body.addEventListener("touchmove", function(e) {
-                        handleMovement(e, plane);
-                    });
-                })
-                .onRender(function() {
-                    plane.uniforms.time.value += 0.5;
-
-                    plane.uniforms.mouseStrength.value = Math.max(
-                        0,
-                        plane.uniforms.mouseStrength.value - 0.0195
-                    );
-                });
-
-            function handleMovement(e, plane) {
-                if (e.targetTouches) {
-                    mousePosition.x = e.targetTouches[0].clientX;
-                    mousePosition.y = e.targetTouches[0].clientY;
-                } else {
-                    mousePosition.x = e.clientX;
-                    mousePosition.y = e.clientY;
-                }
-
-                var mouseCoords = plane.mouseToPlaneCoords(
-                    mousePosition.x,
-                    mousePosition.y
-                );
-
-                plane.uniforms.mousePosition.value = [mouseCoords.x, mouseCoords.y];
-
-                plane.uniforms.mouseStrength.value = 0.6;
-            }
-        } else {
-            console.log("Mobile");
-        }
-    };
-
-</script>
 <script src="scripts/merge.js"></script>
 <script>
     sal({
