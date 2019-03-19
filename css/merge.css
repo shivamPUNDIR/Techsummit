@@ -6,7 +6,28 @@ html {
     -moz-transition: opacity .4s;
     transition: opacity .4s
 }
+.abc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width:100%;
+}
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 
+  font-size: 6vw;
+  font-family: 'Share Tech Mono', monospace;
+}
 .onepage-wrapper,
 body,
 html {
@@ -3046,7 +3067,7 @@ a:hover:after {
 }
 
 .mySlides {
-    display: none
+    display:none;
 }
 
 img {
@@ -4184,6 +4205,7 @@ img {
         width: 29.5%;
         padding: 0
     }
+    
 }
 
 @media only screen and (max-height:590px) {
