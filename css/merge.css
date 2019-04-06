@@ -2964,10 +2964,13 @@ a:hover:after {
     justify-content: center;
     align-items: center
 }
-
+#sponser_heading {
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
 #Sponsors h3 {
     font-size: 2rem;
-    margin-bottom: 15px
+    margin: 15px
 }
 
 .sponsors-data {
