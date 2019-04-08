@@ -15,6 +15,10 @@ html {
   height: 100%;
   width:100%;
 }
+.typewriter{
+    align-content: center;
+    padding: 30vw;
+}
 .typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
@@ -26,6 +30,12 @@ html {
     blink-caret .75s step-end infinite;
 
   font-size: 6vw;
+  font-family: 'Share Tech Mono', monospace;
+}
+.typewriter h2 {
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  text-align: right;
+  font-size: 2vw;
   font-family: 'Share Tech Mono', monospace;
 }
 .onepage-wrapper,
@@ -3708,8 +3718,8 @@ img {
 * {
     --animation-delay: 3s;
     --duration: 100ms;
-    --iterations: 1
-}
+    --iterations: 1;
+  }
 
 .reveal-text,
 .reveal-text::after {
