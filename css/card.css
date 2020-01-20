@@ -111,7 +111,7 @@ img {
   }
 }
 .card__image--flowers {
-  background-image: url(https://unsplash.it/800/600?image=82);
+  background-image: url(../images/cryptography.png);
 }
 .card__image--river {
   background-image: url(../images/ai.png);
