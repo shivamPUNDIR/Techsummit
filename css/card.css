@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400');
 
-*,
+/* *,
 *:before,
 *:after{
   box-sizing: border-box;
@@ -16,9 +16,9 @@
 
 *:focus {
   outline: none!important; 
-}
+} */
 
-body{
+/* body{
   margin: 0;
   padding: 0;
   background: #131313;
@@ -27,16 +27,19 @@ body{
   text-align: left;
   overflow-x: hidden;
   overflow-y: hidden;
-}
+
+} */
 
 .container{
+  margin-top: 5vh;
   width:100vw;
   height: 85vh;
   display: flex;
   flex-flow: row;
   perspective: 1000px;
   perspective-origin: center;
-  margin-top: 10vh;
+  
+ 
 }
 
 .col{
@@ -168,44 +171,71 @@ body{
 .card-container:hover .card:after,
 .card-container:focus .card:before,
 .card-container:focus .card:after{
-  opacity: .34;
+  opacity: .84;
   transform: scale(1);
 }
 
 .col:nth-of-type(1) .card-container:nth-of-type(1) .card:before{
       background-image: url('../images/ai.png');
+      background-size: contain;
+      background-color: #f5f5f5;
+      background-repeat:no-repeat;
 }
 
 .col:nth-of-type(2) .card-container:nth-of-type(1) .card:before{
-      background-image: url('../images/ai.png');
+      background-image: url('../images/cryptography.png');
+      background-color: #f5f5f5;
+      background-size: contain;
+      background-repeat:no-repeat;
 }
 
 .col:nth-of-type(3) .card-container:nth-of-type(1) .card:before{
-      background-image: url('../images/ai.png');
+      background-image: url('../images/Android_robot.png');
+      background-color:#000;
+      background-size: contain;
+      background-repeat:no-repeat;
 }
 
 .col:nth-of-type(1) .card-container:nth-of-type(2) .card:before{
-      background-image: url('../images/ai.png');
+      background-image: url('../images/robotics.png');
+      background-color: #f5f5f5;
+      background-size: contain;
+      background-repeat:no-repeat;
 }
 
 .col:nth-of-type(2) .card-container:nth-of-type(2) .card:before{
-      background-image: url('../images/ai.png');
+      background-image: url('../images/algorithms.png');
+      background-color: #f5f5f5;
+      background-size: contain;
+      background-repeat:no-repeat;
 }
 
 .col:nth-of-type(3) .card-container:nth-of-type(2) .card:before{
-      background-image: url('../images/ai.png');
+      background-image: url('../images/vr.png');
+      background-color: #f5f5f5;
+      background-size: contain ;
+      background-repeat:no-repeat;
 }
 
 .col:nth-of-type(1) .card-container:nth-of-type(3) .card:before{
-      background-image: url('../images/ai.png');
+      background-image: url('../images/blockchain.png');
+      background-color: #f5f5f5;
+      background-size: contain;
+      background-repeat:no-repeat;
 }
 
 .col:nth-of-type(2) .card-container:nth-of-type(3) .card:before{
-      background-image: url('../images/ai.png');
+      background-image: url('../images/GraphQL.png');
+      background-color: #f5f5f5;
+      background-size: contain;
+      background-repeat:no-repeat;
 }
 
 .col:nth-of-type(3) .card-container:nth-of-type(3) .card:before{
-      background-image: url('../images/ai.png');
+      background-image: url('../images/hack.png');
+      background-color: #f5f5f5;
+      background-size: contain;
+      background-repeat:no-repeat;
 }
 
 .card:after{
@@ -257,17 +287,18 @@ h4{
 
 @media (max-width: 540px){
   .container{
-    flex-flow: ;
+    flex-flow: row;
     perspective: none;
     height: 90vh;
-    margin-top: 4vh;
+    margin-top: 10vh;
+    margin-bottom: 0;
   
   } 
+
   .card-container{
-    /* margin: 0; */
-    /* height:  calc(20% - 25px); */
+    
     width: calc(100% - 25px);
-  height:  calc(33.3% - 25px);
+  height:  calc(33.3%-25px);
   margin: 0;
   padding: 8px;
   }

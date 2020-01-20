@@ -3942,9 +3942,14 @@ img {
     .about-links a {
         font-size: 1.8rem
     }
-
+    #Problem-statement h3 {
+        font-size: 2em;
+    }
+    #amazing_tracks h3{
+        font-size: 2em;
+    }
     .event-card img {
-        height: 9em
+        height: 9em;
     }
 }
 
@@ -4062,6 +4067,20 @@ img {
 
     .about-links a {
         font-size: 1em
+    }
+    #Problem-statement h3{
+        font-size: 2em;
+        margin-top: 1.5em;
+        margin: 0;
+        width: 100%;
+        text-align: center
+    }
+    #amazing_tracks{
+        font-size: 2em;
+        margin-top: 1.5em;
+        margin: 0;
+        width: 100%;
+        text-align: center
     }
 
     .btx,
@@ -4229,7 +4248,20 @@ img {
         font-size: 1.2em;
         margin-right: 1.5em
     }
-
+    #Problem-statement h3{
+        font-size: 1.4em;
+        margin-top: 1.5em;
+        margin: 0;
+        width: 100%;
+        text-align: center
+    }
+    #amazing_tracks h3{
+        font-size: 1.4em;
+        margin-top: 1.5em;
+        margin: 0;
+        width: 100%;
+        text-align: center
+    }
     #Sponsors h3 {
         margin-top: 1em;
         font-size: 1.7em
@@ -4276,6 +4308,13 @@ img {
     #About h3 {
         font-size: 1.4em;
         margin: 4rem 2rem .5rem 0rem
+    }
+    #Problem-statement h3{
+        font-size: 1em;
+        margin-top: 1em;
+        margin: 0;
+        width: 100%;
+        text-align: center
     }
 
     .about-links a {
@@ -4361,4 +4400,18 @@ img {
     position: absolute;
     top:120px;
     left:120px
+}
+@media(max-width){
+    #Problem-statement h3{
+        font-size: 0.8em;
+        margin: 0;
+        width: 70%;
+        text-align: center
+    }
+      #amazing_tracks h3{
+        font-size: 0.8em;
+        margin: 0;
+        width: 70%;
+        text-align: center
+      }
 }
