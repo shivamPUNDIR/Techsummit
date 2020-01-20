@@ -2538,7 +2538,8 @@ span.two {
     position: fixed;
     height: 100vh;
     width: 100%;
-    left: -100%
+    left: -100%;
+
 }
 
 .data {
@@ -2731,7 +2732,8 @@ a:hover:after {
 
 #About p {
     font-family: Montserrat, sans-serif;
-    font-weight: 300
+    font-weight: 300;
+    color: #fff;
 }
 
 .about-links a {
@@ -2764,6 +2766,28 @@ a:hover:after {
 }
 
 #About h3 {
+    margin: 0 2rem 0rem 2rem;
+    font-size: 3em
+}
+#amazing_tracks {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#amazing_tracks h3{
+    margin: 0 2rem 0rem 2rem;
+    font-size: 3em
+}
+#Problem-statement{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Problem-statement h3 {
     margin: 0 2rem 0rem 2rem;
     font-size: 3em
 }
@@ -2968,20 +2992,23 @@ a:hover:after {
     font-family: Montserrat, sans-serif !important
 }
 
+
+
 #Sponsors {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center
 }
-#sponser_heading {
-    padding-bottom: 50px;
-    padding-top: 20px;
-}
 #Sponsors h3 {
     font-size: 2rem;
     margin: 15px
 }
+#sponser_heading {
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
 
 .sponsors-data {
     display: flex;
