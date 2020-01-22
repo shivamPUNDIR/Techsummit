@@ -1,0 +1,15 @@
+.speakers{
+     background: #13191E url("../assets/img/pattern.svg") top left/auto repeat;
+}
+.speaker_card{
+      background-color: #13191E;
+    display: block;
+    margin: auto;
+    max-width: 900px;
+}
+.saksham{
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    width: 50%;
+}
