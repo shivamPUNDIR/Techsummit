@@ -28,15 +28,15 @@ html {
   animation:
     typing 3s steps(40, end),
     blink-caret .75s step-end infinite;
-
   font-size: 6vw;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Monoton', cursive;
 }
 .typewriter h2 {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   text-align: right;
   font-size: 2vw;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
 }
 .onepage-wrapper,
 body,
@@ -2427,7 +2427,7 @@ html.iziModal-isOverflow body {
     }
 }
 
-section:nth-child(1) {
+section:first-child {
     background-color: #1c1c1c;
     background-image: url(../images/line_pattern.png);
     background-size: cover
@@ -2437,8 +2437,8 @@ section:nth-child(even) {
     background-color: #222
 }
 
-section:nth-child(odd) {
-    background-color: #1c1c1c
+section:nth-child(odd):not(:first-child) {
+    background-color: #33313b;
 }
 
 * {
@@ -2872,7 +2872,7 @@ a:hover:after {
 }
 
 .contact-data {
-    width: 50%;
+    width: 70.5%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -2886,8 +2886,8 @@ a:hover:after {
 }
 
 .contact-data a img {
-    height: 24px;
-    margin: 16px
+    height: 2em;
+    margin: 1em;
 }
 
 .contact-data p {

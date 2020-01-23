@@ -32,14 +32,13 @@
 
 .container{
   margin-top: 5vh;
-  width:100vw;
+  width:92%;
   height: 85vh;
   display: flex;
   flex-flow: row;
   perspective: 1000px;
   perspective-origin: center;
-  
- 
+  align-self: center;
 }
 
 .col{
@@ -68,7 +67,7 @@
   position: relative;
   width: calc(100% - 25px);
   height:  calc(33.3% - 25px);
-  margin: 17px;
+  margin: 20px;
   padding: 8px;
   text-align: center;
   opacity: .89;

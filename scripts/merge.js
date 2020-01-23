@@ -6725,6 +6725,12 @@ function gt6() {
 function gt7() {
     $(".main").moveTo(7)
 }
+function gt8() {
+    $(".main").moveTo(8)
+}
+function gt9() {
+    $(".main").moveTo(9)
+}
 t2.staggerTo(firstWord2, 1, {
     rotationX: 360,
     ease: Expo.easeOut

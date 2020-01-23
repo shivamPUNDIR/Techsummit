@@ -15,6 +15,7 @@
     <link rel="shortcut icon" href="images/mscLO.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="css/merge.css">
     <link rel="stylesheet" href="css/judges.css">
@@ -45,6 +46,19 @@
         align-items: center;
         /* border-radius: 30%;; */
       }
+    /*.google-maps {
+        position: relative;
+        padding-bottom: 75%;
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }*/
     </style>
 
 </head>
@@ -84,14 +98,15 @@
     <div class="menu">
         <div class="data">
             <ul>
-                <li><a class="clickable" onclick="lockScroll(); gt1()">Home</a></li>
-                <li><a class="clickable" onclick="lockScroll(); gt2()">Tech Blitz</a></li>
-                <li><a class="clickable" onclick="lockScroll(); gt3()">Timeline 2k19</a></li>
-                <li><a href="pentesting/index.html" class="clickable" onclick="lockScroll();">Workshops</a></li>
-                <li><a href="Makeathon/index.html" class="clickable" onclick="lockScroll();">Makeathon 1.0</a></li>
-                <!--                 <li><a class="clickable" onclick="lockScroll(); gt4()">Sponsors</a></li> -->
-                <li><a class="clickable" onclick="lockScroll(); gt4()">Previous Sponsors</a></li>
-                <li><a class="clickable" onclick="lockScroll(); gt5()">Contact Us</a></li>
+                <li><a href="#" class="clickable" onclick="lockScroll();">MSC</a></li>
+                <li><a class="clickable" onclick="lockScroll(); gt1()">MAKEATHON</a></li>
+                <li><a class="clickable" onclick="lockScroll(); gt2()">ABOUT MAKEATHON</a></li>
+                <li><a class="clickable" onclick="lockScroll(); gt3()">JUDGES</a></li>
+                <li><a class="clickable" onclick="lockScroll(); gt4()">PROBLEM STATEMENT</a></li>
+                <li><a class="clickable" onclick="lockScroll(); gt5()">TRACKS</a></li>
+                <li><a class="clickable" onclick="lockScroll(); gt6()">SCHEDULE</a></li>
+                <li><a class="clickable" onclick="lockScroll(); gt7()">SPONSORS</a></li>
+                <li><a class="clickable" onclick="lockScroll(); gt8()">CONTACT US</a></li>
 
 
             </ul>
@@ -108,22 +123,11 @@
             <div class="landing-wrapper">
                 <!-- <div class="landing-image"><img src="" alt="EVENT Logo" height=400 width=600></div> -->
                 <div class="landing-data">
-                    <!-- <div class="landing-data-left" data-sal="fade" data-sal-delay="100" data-sal-easing="ease-in"></div>
-                    <div class="landing-data-right" data-sal="fade" data-sal-delay="10" data-sal-easing="ease-in"> -->
-                    <!-- <div class="app" data-typer-targets="TECH SUMMIT">
-                            <p>TECH SUMMIT<br>
-                            <p>2K19</p>
-                        </div> -->
-                        
                     <div class="abc">
                         <div style="margin-top:0%;z-index: 2;">
                             <div class="typewriter">
-                                <h1>MakEAThOn 2k20!!</h1><br>
+                                <h1>MAKEATHON 2K20!!</h1><br>
                                 <h2>by MICROSOFT STUDENT CHAPTER &nbsp</h2>
-                                
-                                <img id="vanfly"
-                                    style="position: absolute; right:28vw; max-width: 10%; height: 20%; width: auto\5; vertical-align: right;"
-                                    src="images/msc_logo.png" alt="Vanfly">
                             </div>
                         </div>
                         <div class="chevron"><img src="images/down-chevron.svg" alt="scroll-down"></div>
@@ -162,67 +166,22 @@
         <!-- <section id="judges">
             <div id="judge-image">hello</div>
             <div id="judge-content">hello</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </section> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
         <section id="Problem-statement">
             <h3 data-sal="fade" data-sal-delay="20" data-sal-easing="ease-in">
                 <br>PROBLEM STATEMENT</h3>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide">Slide 1</div>
-                      <div class="swiper-slide">Slide 2</div>
-                      <div class="swiper-slide">Slide 3</div>
-                      <div class="swiper-slide">Slide 4</div>
-                      <div class="swiper-slide">Slide 5</div>
-                      <div class="swiper-slide">Slide 6</div>
-                      <div class="swiper-slide">Slide 7</div>
-                      <div class="swiper-slide">Slide 8</div>
-                      <div class="swiper-slide">Slide 9</div>
-                      <div class="swiper-slide">Slide 10</div>
+                      <div class="swiper-slide" style="background: #33313b;">Slide 1</div>
+                      <div class="swiper-slide" style="background: #33313b;">Slide 2</div>
+                      <div class="swiper-slide" style="background: #33313b;">Slide 3</div>
+                      <div class="swiper-slide" style="background: #33313b;">Slide 4</div>
+                      <div class="swiper-slide" style="background: #33313b;">Slide 5</div>
+                      <div class="swiper-slide" style="background: #33313b;">Slide 6</div>
+                      <div class="swiper-slide" style="background: #33313b;">Slide 7</div>
+                      <div class="swiper-slide" style="background: #33313b;">Slide 8</div>
+                      <div class="swiper-slide" style="background: #33313b;">Slide 9</div>
+                      <div class="swiper-slide" style="background: #33313b;">Slide 10</div>
                     </div>
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
@@ -245,7 +204,7 @@
                     <div class="overlay"></div>
                     <div class="card">
                       <h4>MACHINE LEARNING/AI</h4>
-                      <span class"chev">&rsaquo;</span>
+                      <span class="chev">&rsaquo;</span>
                     </div>
                   </div>
                   
@@ -256,7 +215,7 @@
                     <div class="overlay"></div>
                     <div class="card">
                       <h4>ROBOTICS</h4>
-                      <span class"chev">&rsaquo;</span>
+                      <span class="chev">&rsaquo;</span>
                     </div>
                   </div>
                   
@@ -267,7 +226,7 @@
                     <div class="overlay"></div>
                     <div class="card">
                       <h4>BLOCK CHAIN</h4>
-                      <span class"chev">&rsaquo;</span>
+                      <span class="chev">&rsaquo;</span>
                     </div>
                   </div>
                   
@@ -282,7 +241,7 @@
                     <div class="overlay"></div>
                     <div class="card">
                       <h4>CRYPTOGRAPHY</h4>
-                      <span class"chev">&rsaquo;</span>
+                      <span class="chev">&rsaquo;</span>
                     </div>
                   </div>
                   
@@ -293,7 +252,7 @@
                     <div class="overlay"></div>
                     <div class="card">
                       <h4>ALGORITHMS</h4>
-                      <span class"chev">&rsaquo;</span>
+                      <span class="chev">&rsaquo;</span>
                     </div>
                   </div>
                   
@@ -304,7 +263,7 @@
                     <div class="overlay"></div>
                     <div class="card">
                        <h4>GraphQL</h4>
-                      <span class"chev">&rsaquo;hello world</span>
+                      <span class="chev">&rsaquo;hello world</span>
                     </div>
                   </div>
                   
@@ -319,7 +278,7 @@
                     <div class="overlay"></div>
                     <div class="card">
                       <h4>APP DEVELOPMENT</h4>
-                      <span class"chev">&rsaquo;</span>
+                      <span class="chev">&rsaquo;</span>
                     </div>
                   </div>
                   
@@ -330,7 +289,7 @@
                     <div class="overlay"></div>
                     <div class="card">
                       <h4>AR/VR</h4>
-                      <span class"chev">&rsaquo;</span>
+                      <span class="chev">&rsaquo;</span>
                     </div>
                   </div>
                   
@@ -341,7 +300,7 @@
                     <div class="overlay"></div>
                     <div class="card">
                       <h4>OPEN HACK</h4>
-                      <span class"chev">&rsaquo;</span>
+                      <span class="chev">&rsaquo;</span>
                     </div>
                   </div>
                   
@@ -352,7 +311,7 @@
         
            
         <section id="Schedule">
-            <h3 data-sal="fade" data-sal-delay="200" data-sal-easing="ease-in">Timeline 2k19</h3>
+            <h3 data-sal="fade" data-sal-delay="200" data-sal-easing="ease-in">SCHEDULE</h3>
             <div class="schedule-data" data-sal="fade" data-sal-delay="200" data-sal-easing="ease-in">
                 <div class="timeline">
                     <div class="timeline__wrap">
@@ -424,7 +383,7 @@
             <div class="sponsors-data" data-sal="fade" data-sal-delay="200" data-sal-easing="ease-in"><img src="images/vanfly.png" alt="Vanfly"></div>
         </section> -->
         <section id="Sponsors">
-            <h3 data-sal="fade" data-sal-delay="20" data-sal-easing="ease-in">Previous Sponsors</h3>
+            <h3 data-sal="fade" data-sal-delay="20" data-sal-easing="ease-in">SPONSORS</h3>
             <div class="sponsors-data" data-sal="fade" data-sal-delay="200" data-sal-easing="ease-in"><img
                     src="images/Paytm.png" alt="PayTm"> <img src="images/Coding_blocks.png" alt="Coding Blocks"> <img
                     src="images/Balsamiq_logo.png" alt="Balsamiq"> <img src="images/digitalocean.png"
@@ -435,21 +394,33 @@
                     src="images/Fusion_logo.png" alt="FusionSoft"></div>
         </section>
         <section id="Contact">
-            <h3 data-sal-delay="5" data-sal-easing="ease-in">Reach Us</h3>
+            <h3 data-sal-delay="5" data-sal-easing="ease-in">REACH US</h3>
+            
             <iframe
+            width="70%" height="50%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6885.862476915668!2d76.35917501557674!3d30.352904049904126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39102f534a87b5c5%3A0xda1d3ed337e382b3!2sThapar+University%2C+Prem+Nagar%2C+Patiala%2C+Punjab+147004!5e0!3m2!1sen!2sin!4v1551524319562"
-                width="542" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <div class="contact-data" data-sal="fade" data-sal-delay="200" data-sal-easing="ease-in"><a
+                style="border:0" allowfullscreen></iframe>
+            
+            <div class="contact-data" data-sal="fade" data-sal-delay="200" data-sal-easing="ease-in"><a class="tooltip"
                     href="mailto:msc@thapar.edu" data-sal="fade" data-sal-delay="200" data-sal-easing="ease-in"><img
-                        src="images/envelope.svg" alt="mail"></a><a href="https://www.msctiet.co.in/" target="_blank"
+                        src="images/envelope.svg" alt="mail"><span
+                        class="tooltiptext">Mail to MSC</span></a>
+                        <a class="tooltip" href="https://www.msctiet.co.in/" target="_blank"
                     data-sal="fade" data-sal-delay="250" data-sal-easing="ease-in"><img src="images/globe.svg"
-                        alt="website"></a><a href="tel:9997630003" class="tooltip" data-sal="fade" data-sal-delay="300"
+                        alt="website"><span
+                        class="tooltiptext">Visit Our Website</span></a>
+                        <a href="tel:9997630003" class="tooltip" data-sal="fade" data-sal-delay="300"
                     data-sal-easing="ease-in" title="+91 99976 30003"><img src="images/phone.svg" alt="call"> <span
-                        class="tooltiptext">+91 99976 30003</span> </a><a href="https://www.facebook.com/msctiet/"
+                        class="tooltiptext">+91 99976 30003</span> </a>
+                        <a class="tooltip" href="https://www.facebook.com/msctiet/"
                     target="_blank" data-sal="fade" data-sal-delay="300" data-sal-easing="ease-in"><img
-                        src="images/facebook.svg" alt="facebook"></a><a href="https://twitter.com/chapter_student"
+                        src="images/facebook.svg" alt="facebook">
+                    <span
+                        class="tooltiptext">Visit Our Facebook Page</span></a>
+                        <a class="tooltip" href="https://twitter.com/chapter_student"
                     data-sal="fade" data-sal-delay="350" data-sal-easing="ease-in"><img src="images/twitter.svg"
-                        alt="twitter"></a></div>
+                        alt="twitter"><span
+                        class="tooltiptext">Visit Our Twitter Page</span></a></div>
         </section>
     </div>
 </body>
