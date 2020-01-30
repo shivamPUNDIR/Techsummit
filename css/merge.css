@@ -6,38 +6,49 @@ html {
     -moz-transition: opacity .4s;
     transition: opacity .4s
 }
+
 .abc {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  height: 100%;
-  width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
 }
-.typewriter{
+
+.typewriter {
     align-content: center;
     padding: 30vw;
 }
+
 .typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation:
-    typing 3s steps(40, end),
-    blink-caret .75s step-end infinite;
-  font-size: 6vw;
-  font-family: 'Monoton', cursive;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 3s steps(40, end),
+        blink-caret .75s step-end infinite;
+    font-size: 6vw;
+    font-family: 'Monoton', cursive;
 }
+
 .typewriter h2 {
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  text-align: right;
-  font-size: 2vw;
-  font-family: Montserrat, sans-serif;
-  font-weight: 300;
+    margin: 1em auto;
+    /* Gives that scrolling effect as the typing happens */
+    text-align: right;
+    font-size: 2vw;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
 }
+
 .onepage-wrapper,
 body,
 html {
@@ -2438,7 +2449,10 @@ section:nth-child(even) {
 }
 
 section:nth-child(odd):not(:first-child) {
-    background-color: #33313b;
+    background-color: orange;
+    background-image: url(../images/test3.png);
+    /*    height: 100%;*/
+    background-size: cover;
 }
 
 * {
@@ -2468,7 +2482,7 @@ body {
 
 .chapter-logo img {
     height: 50px;
-    padding:4px
+    padding: 4px
 }
 
 .onepage-pagination {
@@ -2769,6 +2783,7 @@ a:hover:after {
     margin: 0 2rem 0rem 2rem;
     font-size: 3em
 }
+
 #amazing_tracks {
     height: 100%;
     display: flex;
@@ -2776,17 +2791,20 @@ a:hover:after {
     justify-content: center;
     align-items: center;
 }
-#amazing_tracks h3{
+
+#amazing_tracks h3 {
     margin: 0 2rem 0rem 2rem;
     font-size: 3em
 }
-#Problem-statement{
+
+#Problem-statement {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 #Problem-statement h3 {
     margin: 0 2rem 0rem 2rem;
     font-size: 3em
@@ -3000,10 +3018,12 @@ a:hover:after {
     justify-content: center;
     align-items: center
 }
+
 #Sponsors h3 {
     font-size: 2rem;
     margin: 15px
 }
+
 #sponser_heading {
     padding-bottom: 50px;
     padding-top: 20px;
@@ -3107,12 +3127,12 @@ a:hover:after {
 }
 
 .mySlides {
-    display:none;
+    display: none;
 }
 
 img {
     vertical-align: middle;
-    
+
 }
 
 .slideshow-container {
@@ -3746,7 +3766,7 @@ img {
     --animation-delay: 3s;
     --duration: 100ms;
     --iterations: 1;
-  }
+}
 
 .reveal-text,
 .reveal-text::after {
@@ -3942,12 +3962,15 @@ img {
     .about-links a {
         font-size: 1.8rem
     }
+
     #Problem-statement h3 {
         font-size: 2em;
     }
-    #amazing_tracks h3{
+
+    #amazing_tracks h3 {
         font-size: 2em;
     }
+
     .event-card img {
         height: 9em;
     }
@@ -4068,14 +4091,16 @@ img {
     .about-links a {
         font-size: 1em
     }
-    #Problem-statement h3{
+
+    #Problem-statement h3 {
         font-size: 2em;
         margin-top: 1.5em;
         margin: 0;
         width: 100%;
         text-align: center
     }
-    #amazing_tracks{
+
+    #amazing_tracks {
         font-size: 2em;
         margin-top: 1.5em;
         margin: 0;
@@ -4248,20 +4273,23 @@ img {
         font-size: 1.2em;
         margin-right: 1.5em
     }
-    #Problem-statement h3{
+
+    #Problem-statement h3 {
         font-size: 1.4em;
         margin-top: 1.5em;
         margin: 0;
         width: 100%;
         text-align: center
     }
-    #amazing_tracks h3{
+
+    #amazing_tracks h3 {
         font-size: 1.4em;
         margin-top: 1.5em;
         margin: 0;
         width: 100%;
         text-align: center
     }
+
     #Sponsors h3 {
         margin-top: 1em;
         font-size: 1.7em
@@ -4277,7 +4305,7 @@ img {
         width: 29.5%;
         padding: 0
     }
-    
+
 }
 
 @media only screen and (max-height:590px) {
@@ -4309,7 +4337,8 @@ img {
         font-size: 1.4em;
         margin: 4rem 2rem .5rem 0rem
     }
-    #Problem-statement h3{
+
+    #Problem-statement h3 {
         font-size: 1em;
         margin-top: 1em;
         margin: 0;
@@ -4391,27 +4420,31 @@ img {
         border-color: orange;
     }
 }
-#logotext{
-  position: absolute;
-  top: 1px;
-  left: 65px;
-}
-.landing-image img{
+
+#logotext {
     position: absolute;
-    top:120px;
-    left:120px
+    top: 1px;
+    left: 65px;
 }
-@media(max-width){
-    #Problem-statement h3{
+
+.landing-image img {
+    position: absolute;
+    top: 120px;
+    left: 120px
+}
+
+@media(max-width) {
+    #Problem-statement h3 {
         font-size: 0.8em;
         margin: 0;
         width: 70%;
         text-align: center
     }
-      #amazing_tracks h3{
+
+    #amazing_tracks h3 {
         font-size: 0.8em;
         margin: 0;
         width: 70%;
         text-align: center
-      }
+    }
 }
