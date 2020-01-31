@@ -2780,7 +2780,7 @@ a:hover:after {
 }
 
 #About h3 {
-    margin: 0 2rem 0rem 2rem;
+    margin: 2rem;
     font-size: 3em
 }
 
@@ -2886,7 +2886,8 @@ a:hover:after {
 }
 
 #Contact h3 {
-    font-size: 2em
+    font-size: 3em;
+    margin: 2rem;
 }
 
 .contact-data {
@@ -3020,7 +3021,7 @@ a:hover:after {
 }
 
 #Sponsors h3 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 15px
 }
 
@@ -3052,7 +3053,7 @@ a:hover:after {
 }
 
 #Schedule h3 {
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: 2em
 }
 
